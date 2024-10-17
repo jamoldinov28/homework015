@@ -1,0 +1,291 @@
+.card{
+    overflow: hidden;
+    &__title{
+        margin-bottom: 60px;
+        h2{
+            font-size: 56px;
+            font-weight: 500;
+            color: #000;
+            margin-bottom: 20px;
+        }
+        p{
+            font-size: 20px;
+            font-weight: 400;
+            color: #555;
+            width: 712px;
+        }
+        h4{
+            margin-top: -40px;
+            margin-left: 80%;
+            font-size: 24px;
+            font-weight: 500;
+            color: #222;
+            border-bottom: 2px solid $bg-py;
+        }
+    }
+    &__wrapper{
+        display: flex;
+        gap: 40px;
+    }
+    &__box{
+        width: 600px;
+        height: 812px;
+        border: 1px solid #685A5230;
+        margin-bottom: 100px;
+        h3{
+            margin-left: 20px;
+            margin-top: 20px;
+            font-size: 40px;
+            font-weight: 500;
+            margin-bottom: 16px;
+        }
+        p{
+            margin-left: 20px;
+            font-size: 20px;
+            font-weight: 400;
+            width: 512px;
+            line-height: 32px;
+            color: #555;
+            margin-bottom: 47px;
+        }
+        strong{
+            margin-left: 100px;
+            font-size: 30px;
+            font-weight: 500;
+            color: $bg-py;
+        }
+    }
+    &__btn{
+        margin-left: 20px;
+        padding: 16px 32px;
+        border: none;
+        font-size: 18px;
+        font-weight: 500;
+        color: #fff;
+        background: #402F2C;
+        cursor: pointer;     
+    }    
+    &__btn.active{
+        border: 1px solid #685A5275;
+        margin-left: 20px;
+        background: #fff;
+        color: #402F2C;
+        cursor: pointer;
+    }
+    &__btn:active{
+        transform: scale(.96);
+    }  
+}
+@media (max-width: 1290px) {
+    .card{
+        &__title{
+            h2{            
+                font-size: 50px;
+            }
+            p{
+                font-size: 16px;
+                width: 500px;
+            }
+            h4{
+               font-size: 20px;
+               border: none;            
+            }
+        }
+        &__wrapper{
+            align-items: center;
+            justify-content: center;
+            gap: 100px;
+        }
+        &__box{
+            width: 450px;
+            height: 712px;
+            p{
+                width: 400px;
+                font-size: 15px;
+            }      
+        }
+        &__btn{
+            padding: 16px 12px;
+        }
+    }
+}
+@media (max-width: 1066px) {
+    .card{
+        &__title{
+            h4{
+               font-size: 15px;
+               border: none;
+            }
+        }
+        &__wrapper{
+            align-items: center;
+            justify-content: center;
+            gap: 100px;
+        }
+        &__box{
+            width: 350px;
+            height: 612px;
+            h3{
+                font-size: 30px;
+            }
+            p{
+                width: 300px;
+                line-height: 25px;
+                font-size: 15px;
+                
+            }  
+            strong{
+                font-size: 19px;
+                margin: 0 auto;
+                margin-left: 20px;
+            }    
+        }
+        &__btn{
+            margin-top: -100px;
+            padding: 10px 10px;
+            margin-bottom: 20px;
+        }
+    }
+}
+@media (max-width: 805px) {
+    .card{
+        &__title{
+            h2{
+                font-size: 35px;
+            }
+            h4{
+                font-size: 20px;
+                border: none;
+            }
+            h4{
+                font-size: 13px;
+            }
+        }
+        &__wrapper{
+            align-items: center;
+            justify-content: center;
+            gap: 70px;
+        }
+        &__box{
+
+            width: 250px;
+            height: 512px;
+            h3{
+                font-size: 20px;
+            }
+            p{
+                width: 200px;
+                line-height: 20px;
+                font-size: 15px;
+                
+            }  
+            strong{
+                font-size: 19px;
+                margin: 0 auto;
+                margin-left: 22px;
+            }    
+        }
+        &__btn{
+            margin-top: -100px;
+            padding: 10px 10px;
+           font-size: 15px;
+        }
+        
+    }
+}
+
+@media (max-width: 690px) {
+    .card{
+        &__title{
+            h4{
+                font-size: 10px;
+                width: 100px;
+            }
+        }
+    }
+}
+@media (max-width: 605px) {
+    .card{
+        &__title{
+            h2{
+                font-size: 35px;
+            }   
+            p{
+                width: 350px;   
+            }
+            h4{
+                display: none;
+            }
+
+        }
+        &__wrapper{
+            flex-direction: column ;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        &__box{
+            width: 350px;
+            height: 612px;
+            h3{
+                font-size: 30px;
+            }
+            p{
+                width: 300px;
+                line-height: 25px;
+                font-size: 15px;      
+            }  
+            strong{
+                font-size: 19px;
+                margin: 0 auto;
+                margin-left: 22px;
+            }    
+        }
+        &__btn{
+            margin-top: -100px;
+            padding: 10px 10px;
+           font-size: 15px;
+        } 
+    }
+}
+@media (max-width: 395px) {
+    .card{
+        &__title{
+            h2{
+                font-size: 28px;
+            }   
+            p{
+                width: 290px;
+                line-height: 25px;   
+            }
+        }
+        &__wrapper{
+            flex-direction: column ;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        &__box{
+            width: 250px;
+            height: 512px;
+            h3{
+                font-size: 20px;
+            }
+            p{
+                width: 200px;
+                line-height: 20px;
+                font-size: 15px; 
+            } 
+            strong{
+                font-size: 19px;
+                margin: 0 auto;
+                margin-left: 22px;
+            }    
+        }
+        &__btn{
+            margin-top: -100px;
+            padding: 10px 10px;
+           font-size: 15px;
+        } 
+    }
+}

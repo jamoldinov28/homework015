@@ -1,0 +1,23 @@
+.foto{
+    overflow: hidden;
+    align-items: center;
+    text-align: center;
+    &__wrapper{
+       overflow: auto;
+       display: flex;
+       gap: 120px;
+        border-top: 1px solid #eee;
+        border-bottom:1px solid  #eee;
+        margin-bottom: 100px;
+    }
+    &__wrapper::-webkit-scrollbar{
+        width: 8px;
+    }
+    &__img{
+        overflow: auto;
+        align-items: center;
+        margin-top: 40px;       
+        margin-bottom: 40px;
+        margin-left: 100px;
+    }
+}

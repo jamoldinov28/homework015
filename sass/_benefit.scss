@@ -1,0 +1,44 @@
+.benefit{
+    margin-bottom: 100px;
+    &__wrapper{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        gap: 250px;
+        h2{
+            font-size: 55px;
+            font-weight: 700;
+            color: $bg-py;
+            border-bottom: 3px solid $bg-py ;
+        }
+        p{
+            font-size: 24px;
+            font-weight: 400;
+            color: #555;
+        }
+    }
+}
+
+@media (max-width: 1185px) {
+    .benefit{
+        &__wrapper{
+            display: flex;
+            flex-wrap: wrap;
+            text-align: center;
+            justify-content: center;
+            gap: 100px;
+            h2{
+                font-size: 55px;
+                font-weight: 700;
+                color: $bg-py;
+                border-bottom: 3px solid $bg-py;  
+                margin-bottom: 20px;            
+            }
+            p{
+                font-size: 24px;
+                font-weight: 400;
+                color: #555;
+            }
+        }
+    }
+}
